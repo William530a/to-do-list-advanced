@@ -56,4 +56,13 @@
     padding: 10px;
     border-bottom: 1px solid #eee;
   }
+
+  li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
   
