@@ -43,19 +43,21 @@ body {
     resize: none;
   }
   
+  /* Boton Agregar Tarea*/
   .task-form button {
-    background-color: #4caf50;
+    background-color: green;
     color: white;
     padding: 10px;
     font-size: 14px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s, transform 0.3s;
   }
   
   .task-form button:hover {
-    background-color: #45a049;
+    background-color: green;
+    transform: scale(1.05);
   }
   
   .filters {
@@ -64,16 +66,26 @@ body {
     gap: 10px;
     margin-bottom: 10px;
   }
-  
+
+  /* Botones Todas - Completadas - Pendientes */
   .filters button {
     flex: 1;
-    background-color: #4caf50;
+    background-color: green;
     color: white;
     border: none;
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
   }
+
+  /* Efecto al pasar el ratón */
+  .filters button:hover {
+    background-color: darkgreen;  /* Cambio de color a un verde más oscuro */
+    transform: scale(1.05);  /* Aumento de tamaño */
+  }
+
+
   
   #task-list {
     max-height: 300px; /* Limitar la altura visible */
@@ -132,7 +144,7 @@ body {
   }
   
   #task-list li button:nth-child(2) {
-    background-color: #2196f3; /* Completar */
+    background-color: green; /* Completar */
     color: white;
   }
   
@@ -145,4 +157,29 @@ body {
     background-color: #f44336; /* Eliminar */
     color: white;
   }
+
+  /* Estilos para el botón de ordenar por prioridad */
+#sort-priority {
+  background-color: green; /* Color de fondo verde */
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 15px; /* Espacio debajo del botón */
+  width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+}
+
+#sort-priority:hover {
+  background-color: green; /* Color más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Efecto de aumento de tamaño */
+}
+
+#sort-priority:active {
+  background-color: green; /* Color más oscuro cuando se hace clic */
+  transform: scale(0.98); /* Efecto de pulsación */
+}
+
   
